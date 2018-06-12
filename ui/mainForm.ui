@@ -32,7 +32,7 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QTableWidget" name="twMain"/>
+       <widget class="QListWidget" name="lwMain"/>
       </item>
       <item>
        <layout class="QVBoxLayout" name="verticalLayout">
@@ -68,7 +68,7 @@
      <x>0</x>
      <y>0</y>
      <width>632</width>
-     <height>25</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
@@ -92,10 +92,11 @@
     <enum>LeftToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
-    <bool>false</bool>
+    <bool>true</bool>
    </attribute>
    <addaction name="act_download"/>
    <addaction name="act_save"/>
+   <addaction name="actBlockView"/>
   </widget>
   <action name="act_download">
    <property name="icon">
@@ -122,6 +123,21 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actBlockView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../pics/blocked.png</normaloff>../pics/blocked.png</iconset>
+   </property>
+   <property name="text">
+    <string>Показать/скрыть заблокированные</string>
+   </property>
+   <property name="toolTip">
+    <string>Показать/скрыть заблокированные</string>
    </property>
   </action>
  </widget>

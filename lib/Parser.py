@@ -25,7 +25,7 @@ class parseImages(HTMLParser):
                 if name == 'src' and 'http' in value:
                     if '.' in value.split('/').pop():
                    # getImage(urlString + "/" + value)
-                        self.urlList.append(value)
+                        self.urlList.append({'url' : value, 'name' :  value.split('/').pop()})
 
 def Get_IMG_Urls(urlStr=urlString):
     if len(urlStr)<5:
